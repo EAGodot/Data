@@ -1,4 +1,4 @@
-免費的github空間為1G
+## 免費的github空間為1G
 1、 //獲取git軟件版本
     git --version
 
