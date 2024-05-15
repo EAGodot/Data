@@ -1,22 +1,26 @@
-## 免費的github空間為1G
-1、 //獲取git軟件版本
-    git --version
 
-？//git配置文件在哪個位置
+# 免費的github空間為1G
+# 獲取git軟件版本
+`git --version`
+
+# git配置文件在哪個位置
     https://blog.51cto.com/u_13746169/5876491
     C:/Users/用户名文件夹/.gitconfig 文件中
-
-2、在开始Git之旅之前，我们需要设置一下Git的环境变量，这个设置是一次性的工作。即这些设置会在全局文件（用户主目录下的:file:`.gitconfig`）或系统文件（:file:`/etc/gitconfig`）中做永久的记录
-    1、告诉Git当前用户的姓名和邮件地址，配置的用户名和邮件地址将在版本库提交时作为提交者的用户名和邮件地址。
+# 示例
+在开始Git之旅之前，我们需要设置一下Git的环境变量，这个设置是一次性的工作。即这些设置会在全局文件（用户主目录下的:file:`.gitconfig`）或系统文件（:file:`/etc/gitconfig`）中做永久的记录
+    1. 告诉Git当前用户的姓名和邮件地址，配置的用户名和邮件地址将在版本库提交时作为提交者的用户名和邮件地址。
+    	```
         $ git config --global user.name "Jiang Xin"
         $ git config --global user.email jiangxin@ossxp.com
-    2、设置一些Git别名，以便可以使用更为简洁的子命令。
+	```
+    2. 设置一些Git别名，以便可以使用更为简洁的子命令。
         如果拥有系统管理员权限（可以执行:command:`sudo`命令），希望注册的命令别名能够被所有用户使用，可以执行如下命令：
-            $ sudo git config --system alias.br branch
-            $ sudo git config --system alias.ci "commit -s"
-            $ sudo git config --system alias.co checkout
-            $ sudo git config --system alias.st "-p status"
-			
+	```	
+	$ sudo git config --system alias.br branch
+	$ sudo git config --system alias.ci "commit -s"
+	$ sudo git config --system alias.co checkout
+	$ sudo git config --system alias.st "-p status"
+	```		
 20230513：
 		gitlab使用記錄tag:1
 			設置全局配置
